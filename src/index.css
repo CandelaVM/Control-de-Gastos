@@ -1,0 +1,493 @@
+button,
+input,
+optgroup,
+select,
+textarea {
+    line-height: 1.20 !important;
+}
+
+.content-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Noto Nastaliq Urdu', serif;
+    background-color: #f5f5f5;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.sticky {
+    overflow: hidden;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.sombra {
+    box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
+    -webkit-box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 0px 9px 10px -10px rgba(0, 0, 0, 0.51);
+    background-color: #ffffff;
+    padding: 4rem;
+    border-radius: 1.2rem;
+}
+
+header {
+    background-color: rgb(70, 8, 173);
+}
+
+header h1 {
+    padding: 3rem 0;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.centrar-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centrar-imagen img {
+    max-width: 250px;
+}
+
+
+/* .img-centro-vertical {
+    display: table-cell;
+    height: 700px;
+    vertical-align: middle;
+} */
+
+.formulario {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10rem 0;
+}
+
+@media (min-width: 768px) {
+    .formulario {
+        padding: 5rem 0;
+        width: 60rem;
+    }
+}
+
+.formulario h2 {
+    font-size: 3.6rem;
+    text-align: center;
+    display: block;
+    color: #ffffff;
+    margin-bottom: 4rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgb(70, 8, 173);
+}
+
+.formulario .campo {
+    display: grid;
+    margin-bottom: 2rem;
+}
+
+.formulario label {
+    color: #923792;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"] {
+    background-color: #f5f5f5;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+    flex: 1;
+    font-size: 1.6rem;
+}
+
+.formulario input[type="submit"] {
+    background-color: rgb(70, 8, 173);
+    border: none;
+    padding: 2rem;
+    text-align: center;
+    /* margin-top: 2rem; */
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 25px;
+    width: 100%;
+    transition: background-color 300ms ease;
+}
+
+@media (min-width: 768px) {
+    .formulario input[type="submit"] {
+        display: block;
+        padding: 1rem 5rem;
+    }
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: rgba(71, 8, 173, 0.548);
+    cursor: pointer;
+}
+
+.formulario select {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.alerta {
+    padding: 2rem 5rem;
+    max-width: 60rem;
+    margin: 2rem auto 2rem auto;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: #ffffff;
+    border: 5px solid #524f4f79;
+    /* color: #4e4b4b; */
+}
+
+.alerta p {
+    color: #524f4f79;
+}
+
+
+/* .alerta.error {
+    background-color: var(--blanco);
+    border-left: 5px solid #b91c1c;
+    color: #b91c1c;
+} */
+
+
+/* .alerta.success {} */
+
+.contenedor {
+    width: 90%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.seccion-presupuesto {
+    margin-top: -5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(5rem);
+}
+
+.interfaz-gestion-presupuesto {
+    flex-direction: column;
+}
+
+.interfaz-gestion-presupuesto :first-child {
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    .interfaz-gestion-presupuesto {
+        flex-direction: row;
+        align-items: center;
+        gap: 4rem;
+    }
+    .interfaz-gestion-presupuesto>div {
+        width: 50%;
+    }
+    .interfaz-gestion-presupuesto :first-child {
+        margin-bottom: 0;
+    }
+}
+
+.formulario input[type="text"].nuevo-presupuesto,
+.formulario input[type="number"].nuevo-presupuesto {
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.contenedor-presupuesto svg {
+    width: 25rem;
+}
+
+.contenido-presupuesto {
+    width: 100%;
+}
+
+.contenido-presupuesto p {
+    font-weight: 400;
+    color: #64748b;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-presupuesto p {
+        text-align: left;
+    }
+}
+
+.seccion-presupuesto p.negativo,
+.seccion-presupuesto p.negativo span {
+    color: red;
+}
+
+.contenido-presupuesto span {
+    font-weight: 900;
+    color: var(--azul);
+}
+
+.reset-app {
+    border: none;
+    background-color: rgb(70, 8, 173);
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-radius: 1rem;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+.reset-app:hover {
+    background-color: rgb(70, 8, 173);
+    cursor: pointer;
+}
+
+main {
+    padding-top: 10rem;
+}
+
+.seleccion-gasto .campo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.seleccion-gasto label {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #64748b;
+}
+
+.seleccion-gasto .tipo-gasto select:hover {
+    color: #4608AD;
+}
+
+.seleccion-gasto select {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: #f5f5f5;
+    color: black
+}
+
+.listado-gastos {
+    margin-top: 5rem;
+}
+
+.listado-gastos h2 {
+    color: #64748b;
+    font-weight: 700;
+}
+
+.no-gastos {
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.gasto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.cantidad-gasto {
+    font-size: 2.4rem;
+    color: black;
+    font-weight: 700;
+}
+
+.contenido-gasto {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contenido-gasto img {
+    width: 10rem;
+}
+
+.descripcion-gasto p {
+    margin: 0 0 0.3rem 0;
+}
+
+.descripcion-gasto .categoria {
+    color: #94a3b8;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.descripcion-gasto p {
+    margin-bottom: 1rem;
+}
+
+.descripcion-gasto .nombre-gasto {
+    color: #64748b;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.descripcion-gasto .nombre-gasto:hover {
+    cursor: pointer;
+}
+
+.descripcion-gasto .fecha-gasto {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #64748b;
+}
+
+.descripcion-gasto .fecha-gasto span {
+    font-weight: 400;
+}
+
+.nuevo-gasto {
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+}
+
+.nuevo-gasto img {
+    width: 5rem;
+}
+
+.nuevo-gasto img:hover {
+    cursor: pointer;
+}
+
+.ventana_gasto {
+    position: absolute;
+    background-color: rgb(0 0 0 / 0.92);
+    top: 0px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.ventana_gasto .cerrar-ventana {
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.ventana_gasto.cerrar-ventana img {
+    max-width: 50px;
+}
+
+.ventana_gasto .formulario {
+    max-width: 80rem;
+    width: 40rem;
+    /* transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in;
+    opacity: 0; */
+}
+
+.ventana_gasto label {
+    color: #ffffff;
+}
+
+body .ventana_gasto {
+    overflow: hidden;
+}
+
+.ventana_gasto .formulario.animar {
+    position: relative;
+    opacity: 1;
+}
+
+.ventana_gasto .formulario.cerrar {
+    opacity: 0;
+}
+
+.ventana_gasto label {
+    text-align: left;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+    font-size: 1rem !important;
+}
+
+.CircularProgressbar .CircularProgressbar-path {
+    stroke: #4608AD !important;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+    fill: #724fac;
+}
+
+.grafica-negativa .CircularProgressbar .CircularProgressbar-text {
+    fill: red;
+}
+
+.grafica-negativa .CircularProgressbar .CircularProgressbar-path {
+    stroke: red !important;
+}
+
+
+/*** SWIPE LIST OVERRIDES **/
+
+.swipe-action__leading {
+    background-color: blueviolet;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.swipe-action__trailing {
+    background-color: #db2777;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.swipeable-list .swipe-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    text-align: right;
+}
